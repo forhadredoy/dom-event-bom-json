@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div  id="div">
+    <p id="p1"> the name of our country is bangladesh</p>
+    <p id="p2">the name of our country is india</p>
+</div>
+      
+
+
+
+
+        
+    <script>
+        const para = document.createElement("p");
+        const node =document.createTextNode("the name of our country is argentina")
+        para.appendChild(node)
+        const element = document.getElementById("div");
+        const p1=document.getElementById("p1");
+        element.insertBefore(para,p1)
+
+      var p2=  document.getElementById("p2")
+      element.removeChild(p2);
+
+      var collection=document.getElementsByTagName("p")
+      console.dir(collection["p1"]);
+
+      var nodelist = document.querySelectorAll("p")
+      console.dir(nodelist["p1"]);
+
+
+       
+
+
+      
+      
+    </script>
+    
+</body>
+</html>
